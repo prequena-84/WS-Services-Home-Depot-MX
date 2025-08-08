@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { PlaywrightModule } from './common/webview/webview.module';
 
 @Module({
-  imports: [],
+  imports: [PlaywrightModule],
   controllers: [AppController],
   providers: [AppService],
 })
